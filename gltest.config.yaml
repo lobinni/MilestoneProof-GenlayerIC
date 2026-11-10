@@ -1,0 +1,18 @@
+# Configuration for the gltest integration runner (tests/integration).
+# Direct-mode tests (tests/direct) do not use this file.
+#
+# Pick the network with `gltest --network <name> ...` or by editing
+# default_network. Chain ids and RPC URLs follow the official GenLayer docs;
+# adjust if your Studio exposes a different port.
+
+default_network: localnet
+
+networks:
+  localnet:
+    # GenLayer Studio running locally (`genlayer up` from the genlayer CLI)
+    url: http://localhost:4000/api
+    chain_id: 61999
+  studionet:
+    # Hosted Studio network
+    url: https://studio.genlayer.com/api
+    chain_id: 61999

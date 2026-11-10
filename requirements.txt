@@ -1,0 +1,15 @@
+# Toolchain used to lint and test the contract. Python 3.12 is required.
+#
+# The GenVM runner bundle is downloaded on the first pytest/gltest run into
+# ~/.cache/gltest-direct (one-time, ~135 MB, needs internet access).
+
+# In-memory direct-mode test runner (pytest plugin: direct_vm, direct_deploy, ...)
+genlayer-test==0.29.2
+
+# Official GenVM linter + contract schema validator
+genvm-linter==0.11.1rc2
+
+# Python SDK used by tools/samples that talk to a running network
+genlayer-py==0.18.0
+
+pytest>=8.2,<9

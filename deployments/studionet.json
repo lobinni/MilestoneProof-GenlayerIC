@@ -1,0 +1,18 @@
+{
+  "network": "studionet",
+  "network_label": "GenLayer Studio (hosted Studio network)",
+  "chain_id": 61999,
+  "contract_class": "MilestoneProof",
+  "source_file": "contracts/milestone_proof.py",
+  "source_sha256": "8369b6a8b802df66fc26c235cf5cca639ddefb204fb53c9eb1313208a6cd221f",
+  "address": "0x8ADE76f942b221c799c9529449a9B8feFbd419BF",
+  "explorer": "https://explorer-studio.genlayer.com/address/0x8ADE76f942b221c799c9529449a9B8feFbd419BF",
+  "deployed_with": "genlayer CLI (`genlayer deploy --contract contracts/milestone_proof.py`)",
+  "status": "deployed",
+  "verification": {
+    "code_hash": "genlayer code 0x8ADE76f942b221c799c9529449a9B8feFbd419BF | sha256sum  -> must equal source_sha256 above",
+    "schema": "genlayer schema 0x8ADE76f942b221c799c9529449a9B8feFbd419BF  -> 10 methods (4 write, 6 view)",
+    "limits": "read get_limits()  -> must equal docs/API.md table",
+    "read_probe": "MILESTONE_PROOF_LIVE=1 python3 -m pytest tests/integration/test_deployed_contract.py -q"
+  }
+}

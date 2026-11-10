@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# GenLayer / GenVM caches
+.gltest/
+glsim-data/
+
+# Node / frontend build (frontend lives in its own repository)
+node_modules/
+dist/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

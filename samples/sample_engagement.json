@@ -1,0 +1,21 @@
+{
+  "title": "Developer portal documentation",
+  "description": "Produce the public developer documentation for the ACME API.\n\nThe engagement is split into two milestones: written documentation first, then the packaged release. Each milestone has its own frozen acceptance criteria and its own evaluation.\n\nEvaluation is performed by GenLayer validators against a public HTTPS evidence URL submitted by the worker.",
+  "milestones": [
+    {
+      "title": "API documentation",
+      "criteria": [
+        "The evidence documents a GET /users endpoint",
+        "The evidence documents the response payload fields",
+        "The evidence states the measured test coverage"
+      ]
+    },
+    {
+      "title": "Release packaging",
+      "criteria": [
+        "The evidence references a public deployment URL",
+        "The evidence declares a signed release tag"
+      ]
+    }
+  ]
+}
